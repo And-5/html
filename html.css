@@ -23,7 +23,6 @@
     width: 100%;
     padding: 76px 0 49px;
     background-image: url("img/background_1.png");
-    /*background-repeat: no-repeat;*/
     background-position: center;
     background-size: cover;
     position: relative;
@@ -40,7 +39,7 @@
     z-index: 2;
 }
 
-.title {
+.awesome_title {
     text-align: center;
     margin: 100px 0 25px;
     font-family: Raleway;
@@ -48,7 +47,7 @@
     line-height: 42px;
 }
 
-.title_2 {
+.stylish_title {
     font-family: Raleway;
     font-size: 36px;
     line-height: 42px;
@@ -59,7 +58,7 @@
     padding: 0 0 48px;
 }
 
-.title_3 {
+.saying_title {
     font-family: Raleway;
     font-size: 36px;
     line-height: 42px;
@@ -83,7 +82,7 @@
     /*padding: 48px 0 30px;*/
 }
 
-.text_1 {
+.awesome_text {
     text-align: center;
     color: #86878B;
     font-size: 14px;
@@ -92,7 +91,7 @@
     font-family: Open Sans;
 }
 
-.text_2 {
+.stylish_text {
     text-align: center;
     color: #FFFFFFCC;
     font-size: 16px;
@@ -102,21 +101,16 @@
     font-style: normal;
 }
 
-.art1 {
+.picture_title {
     font-family: Open Sans;
     font-weight: bold;
     font-size: 20px;
     line-height: 27px;
+    padding: 30px 0 16px 0;
 }
 
-.block_row {
+.awesome_row {
     display: flex;
-}
-
-.block_column {
-    /*border: #0b2e13;*/
-    /*flex: 1;*/
-    /*width: 33%;*/
 }
 
 .block_item {
@@ -124,7 +118,7 @@
     padding: 0 0 108px;
 }
 
-.item_1 {
+.picture_title_discr {
     font-size: 14px;
     line-height: 19px;
     text-align: center;
@@ -161,8 +155,8 @@
 .social {
     background: black;
     width: 100%;
-    height: 101px;
-    margin: 0 auto;
+    height: 56px;
+    padding: 30px 0 15px 0;
 }
 
 .img_2 {
@@ -275,14 +269,13 @@
     justify-content: space-between;
     margin-top: 62px;
 }
-
-/*.price_2 {*/
-/*    margin: -15px;*/
-/*}*/
-.price:nth-child(2) {
-    margin: -15px;
+.price {
+    transition: 1s;
 }
 
+.price:hover {
+    transform: scale(1.15);
+}
 
 .price_box {
     text-align: center;
@@ -526,10 +519,6 @@
     margin-left: 0;
 }
 
-.form {
-    display: flex;
-    flex-direction: column;
-}
 .free_trial {
     background: white;
     width: 370px;
@@ -565,9 +554,157 @@
 }
 
 .date {
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    padding-left: 59px;
+    padding-top: 44px;
+
+}
+
+input {
+    font-size: 14px;
+    line-height: 19px;
+    width: 252px;
+    border-bottom: 1px solid #BDBDBD;
+    padding: 0 0 16px 0;
+}
+
+input:nth-last-child(-n+2) {
+    padding-top: 19px;
+}
+
+.social_bgr {
+    background: #F8EFEF;
+    height: 110px;
+}
+
+.social_media {
+    display: flex;
+}
+
+.social_padding {
+    padding: 14px 0 17px 0;
+}
+
+.social_title {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 27px;
+    font-size: 20px;
+    padding-bottom: 14px;
+}
+
+.social_text {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.social_img {
+    width: 684px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 42px;
+    padding-left: 129px;
+}
+
+.social_footer {
+    font-size: 23px;
+    color: rgba(255, 255, 255, 0.5);;
+    width: 317px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-bottom: 18px;
+}
+
+.contact_us {
+    margin: 80px 0 44px 0;
+}
+.contact_title {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #212121;
+    padding-bottom: 34px;
+}
+
+.contact_text {
+    text-align: center;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #86878B;
+    padding: 34px 0 95px 0;
+}
+
+.send_form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact_input {
     display: flex;
     flex-direction: column;
 }
 
+.contact_btn {
+    text-align: center;
+    background: #EC7979;
+    color: white;
+    font-family: "Open Sans";
+    padding: 11px 31px;
+    margin: 0 auto;
+    margin-top: 70px;
+    text-decoration: none;
+    font-size: 15px;
+    font-height: 20px;
+    text-align: center;
+    width: max-content;
+}
 
 
+.contact_input input {
+    width: 478px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    border-bottom: 1px solid #BDBDBD;
+    padding: 0 0 32px 0;
+    color: #BDBDBD;
+}
+
+
+.contact_input input:nth-last-child(-n+2) {
+    padding-top: 32px;
+}
+.form_message {
+    width: 478px;
+}
+
+textarea {
+    height: 100%;
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #BDBDBD;
+    font-size: 14px;
+    line-height: 19px;
+    font-style: normal;
+    resize: none;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    color: #BDBDBD;
+}
